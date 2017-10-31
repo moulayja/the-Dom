@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="youTyped"></h1>
+
+
+    <script type="text/javascript">
+        function changeHeader() {
+            let input = window.prompt("enter a string");
+            let times = window.prompt("enter the number of times");
+            let number = Number(times);
+
+            let repeated = input.repeat(number);
+
+            window.alert(repeated);
+        }
+
+        changeHeader();
+    </script>
+</body>
+
+</html>
+
+<!-- Now,​ ​use​ ​window.prompt()​​ ​once​ ​to​ ​query​ ​the​ ​user​ ​for​ ​a​ ​string,​ ​and​ ​again​ ​to​ ​query​ ​the​ ​user for​ ​a​ ​number,​ ​x.​ ​
+    Use​ ​​window.alert()​​ ​to​ ​display​ ​the​ ​same​ ​string,​ ​repeated​ ​x​ ​times.​ ​You​ ​may assume​ ​appropriate​ ​input.​ ​HINT:​ ​You​ ​must​ ​convert,​ ​or​ ​typecast,​ ​the​ ​user​ ​input​ ​into​ ​a​ ​number. -->

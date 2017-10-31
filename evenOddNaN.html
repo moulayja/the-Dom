@@ -1,0 +1,29 @@
+<!-- With​ ​the​ ​files​ ​odd-even-nan.html​ ​and​ ​odd-even-nan.js​,​ ​use​ ​window.prompt()​​ ​to​ ​query​ ​the user​ ​for​ ​a​ ​number.​ ​
+    Use​ ​​window.alert()​​ ​to​ ​tell​ ​the​ ​user​ ​"that​ ​number​ ​is​ ​odd",​ ​"that​ ​number​ ​is even",​ ​or​ ​"that​ ​is​ ​not​ ​a​ ​number",​ ​as​ ​is​ ​appropriate. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Even or Odd or NaN</title>
+</head>
+
+<body>
+    <script>
+        let input = window.prompt("Enter a number to deternime whether it's even or odd");
+        input = Number(input);
+
+        if (input % 2 === 1) {
+            window.alert("The number is odd");
+        } else if (input % 2 === 0) {
+            window.alert("The number is even");
+        } else {
+            window.alert("NaN");
+        }
+    </script>
+</body>
+
+</html>
